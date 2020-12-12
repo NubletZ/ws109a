@@ -1,15 +1,15 @@
-期中作業 : NuBook 留言板
+期中作業
 =======
-> * 網站的主題 : 306's Book Store
+> * 網站的主題 : NuBook 留言板
 > * 作者 : 魏美亞
 > * 學號 : 110810538
 > * 作品 : 並非100%原創
 
 ## 1. Database Scheme
-<img src="https://github.com/NubletZ/ws109a/blob/master/mid%20assignment/resource/db_scheme.png" style="width: 450px;">
+<img src="https://github.com/NubletZ/ws109a/blob/master/mid%20assignment/resource/db_scheme.png" width="700px">
 
 ## 2. Website Function Flowchart
-<img src="https://github.com/NubletZ/ws109a/blob/master/mid%20assignment/resource/website_scheme.png" style="width: 450px;">
+<img src="https://github.com/NubletZ/ws109a/blob/master/mid%20assignment/resource/website_scheme.png" width="700px">
 
 NuBook is a website where user can make a post and leave a comment on other people post. This website was made for my study purposes only. Right now the feature in this website is:
 * Create your own account
