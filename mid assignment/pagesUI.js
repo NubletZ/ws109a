@@ -68,7 +68,7 @@ export function home(curUser, content){
         <body class="bgHome">
             <div class="divSide" style="left: 0">
                 <div style="text-align: center;">
-                    <img id="pp" src=${loadImg(curUser)} style="border-radius: 100%; width: 140px;position: relative; padding:10px;">
+                    <img src=${loadImg(curUser)} style="border-radius: 100%; width: 140px;position: relative; padding:10px;">
                     <p class="menuButton menuUser" id="currentUser">${curUser}</p>
                     <a href="/" class="menuButton menuLogout" onclick=""><u><b>Log out</b></u></a>
                 </div><br>
@@ -93,7 +93,7 @@ export function home(curUser, content){
                     <img src="resource/logoHD.png" class="logoNavBar">
                 </a>
                 <div class="divoptNavBar">
-                    <a href="/myPost" class="optNavBar" style="margin: 20px;">
+                    <a href="https://github.com/NubletZ/ws109a/tree/master/mid%20assignment" class="optNavBar" style="margin: 20px;">
                         Reference
                     </a>
                     <span class="optNavBar">></span>
@@ -114,7 +114,7 @@ export function newPost(curUser){
     return home(curUser, `
     <div class="forPost">
         <div style="width: 100%; height: 120px; position: absolute; top: -70px;">
-            <img id="pp" src=${loadImg(curUser)} style="border-radius: 100%; width: 90px;position: relative; padding:10px; left: 20px; float: left;">
+            <img src=${loadImg(curUser)} style="border-radius: 100%; width: 90px;position: relative; padding:10px; left: 20px; float: left;">
             <div style="float: left; position: relative; padding-top: 20px;"> 
                 <p class="pUserName">${curUser}</p>
                 <p class="pDate" id="curDate" name="_curDate">20 November 2020 10:50</p>
@@ -192,7 +192,7 @@ export function postList(curUser, allposts, length, x) {
         postlist.push(`
         <div class="forPost">
             <div style="width: 100%; height: 120px; position: absolute; top: -70px;">
-                <img id="pp" src=${loadImg(allposts[i].name)} style="border-radius: 100%; width: 90px;position: relative; padding:10px; left: 20px; float: left;">
+                <img src=${loadImg(allposts[i].name)} style="border-radius: 100%; width: 90px;position: relative; padding:10px; left: 20px; float: left;">
                 <div style="float: left; position: relative; padding-top: 20px;"> 
                     <p class="pUserName">${allposts[i].name}</p>
                     <p class="pDate">${allposts[i].date}</p>
@@ -213,7 +213,7 @@ export function postList(curUser, allposts, length, x) {
         content = `
         <div class="forPost">
             <div style="width: 100%; height: 120px; position: absolute; top: -70px;">
-                <img id="pp" src=${loadImg("Nubletz")} style="border-radius: 100%; width: 90px;position: relative; padding:10px; left: 20px; float: left;">
+                <img src=${loadImg("Nubletz")} style="border-radius: 100%; width: 90px;position: relative; padding:10px; left: 20px; float: left;">
                 <div style="float: left; position: relative; padding-top: 20px;"> 
                     <p class="pUserName">Nubletz</p>
                     <p class="pDate">8 December 2020 - 16:00</p>
@@ -251,7 +251,7 @@ export function showComments(curUser, allposts, allcom, id) {
         comlist.push(`
         <div class="forComment" id="${comment.id}">
             <div style="width: 100%; height: 100px; position: relative; padding-top: 10px;">
-                <img id="pp" src=${loadImg(comment.nameC)} style="border-radius: 100%; width: 60px;position: relative; padding:10px; left: 20px; float: left;">
+                <img src=${loadImg(comment.nameC)} style="border-radius: 100%; width: 60px;position: relative; padding:10px; left: 20px; float: left;">
                 <div style="float: left; position: relative; padding-top: 20px;"> 
                     <p class="pUserName" style="font-size: 18px;">${comment.nameC}</p>
                     <p class="pDate" style="color: rgb(166, 166, 166)">${comment.dateC}</p>
@@ -266,7 +266,7 @@ export function showComments(curUser, allposts, allcom, id) {
     let content = `
     <div class="forPost" style="margin-bottom: 25px;">
         <div style="width: 100%; height: 120px; position: absolute; top: -70px;">
-            <img id="pp" src=${loadImg(allposts.name)} style="border-radius: 100%; width: 90px;position: relative; padding:10px; left: 20px; float: left;">
+            <img src=${loadImg(allposts.name)} style="border-radius: 100%; width: 90px;position: relative; padding:10px; left: 20px; float: left;">
             <div style="float: left; position: relative; padding-top: 20px;"> 
                 <p class="pUserName">${allposts.name}</p>
                 <p class="pDate">${allposts.date}</p>
@@ -276,7 +276,7 @@ export function showComments(curUser, allposts, allcom, id) {
     </div>
     <div class="forComment">
         <div style="width: 100%; height: 100px; position: relative; padding-top: 10px;">
-            <img id="pp" src="resource/profilePhoto.png" style="border-radius: 100%; width: 60px;position: relative; padding:10px; left: 20px; float: left;">
+            <img src=${loadImg(curUser)} style="border-radius: 100%; width: 60px;position: relative; padding:10px; left: 20px; float: left;">
             <div style="float: left; position: relative; padding-top: 20px;"> 
                 <p class="pUserName" style="font-size: 18px;">${curUser}</p>
                 <p class="pDate" id="curDate" style="color: rgb(166, 166, 166);">20 November 2020 10:50</p>
