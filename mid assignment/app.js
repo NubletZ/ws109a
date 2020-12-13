@@ -120,21 +120,6 @@ async function home(ctx) {
     ctx.response.redirect('/')
   }
 }
-/*
-async function create(ctx) {
-  const body = ctx.request.body()
-  if (body.type === "form") {
-    const pairs = await body.value
-    const post = {}
-    for (const [key, value] of pairs) {
-      post[key] = value
-    }
-    console.log('create:post=', post)
-    db.query("INSERT INTO posts (title, body) VALUES (?, ?)", [post.title, post.body]);
-    ctx.response.redirect('/');
-  }
-}
-*/
 
 async function saveData(ctx) {
   const body = ctx.request.body()
@@ -266,5 +251,5 @@ async function refAbout(ctx) {
   ctx.response.body = await ui.refAbout(curUser)
 }
 
-console.log('Server run at http://127.0.0.1:8000');
-await app.listen({ hostname: "127.0.0.1", port: 8000});
+console.log('Server run at 172.104.100.202:8002');
+await app.listen({ hostname: "172.104.100.202", port: 8002});
